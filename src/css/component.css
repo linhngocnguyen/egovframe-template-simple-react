@@ -271,3 +271,106 @@ select::-ms-expand {display:none;}
 
 /* 리액트 관련 */
 .react-datepicker__tab-loop {display: inline-block;}
+/*TABLE*/
+.table-container {
+  overflow: auto;
+  max-width: 100%;
+  height: 350px;
+  position: relative;
+  z-index: 0;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  z-index: 1;
+}
+
+th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  width: 100px;
+}
+
+td {
+  cursor: pointer;
+  padding: 8px;
+  text-align: left;
+  width: 100px;
+  height: 40px;
+}
+tbody > tr:hover td {
+  background-color: #c9c0c0;
+}
+th:nth-child(-n + 5),
+td:nth-child(-n + 5) {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  left: 0;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  left: 100px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  left: 200px;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  left: 300px;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  left: 400px;
+}
+
+.blurred-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  max-height: 60vh;
+  overflow-y: auto;
+  z-index: 3;
+}
+
+.popup-content {
+  text-align: left;
+}
+
+.popup button {
+  margin-top: 20px;
+  cursor: pointer;
+}
+body.popup-active .footer {
+  display: none;
+}
