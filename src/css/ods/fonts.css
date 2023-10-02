@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/* @font-face {
+	font-family: 'Pretendard GOV';
+	font-weight: 900;
+	font-display: swap;
+	src: url('../../fonts/woff2/PretendardGOV-Black.woff2') format('woff2'), 
+    url('../../fonts/woff/PretendardGOV-Black.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard GOV';
+	font-weight: 800;
+	font-display: swap;
+	src: url('../../fonts/woff2/PretendardGOV-ExtraBold.woff2') format('woff2'), 
+    url('../../fonts/woff/PretendardGOV-ExtraBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard GOV';
+	font-weight: 700;
+	font-display: swap;
+	src: url('../../fonts/woff2/PretendardGOV-Bold.woff2') format('woff2'), 
+    url('../../fonts/woff/PretendardGOV-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard GOV';
+	font-weight: 600;
+	font-display: swap;
+	src: url('../../fonts/woff2/PretendardGOV-SemiBold.woff2') format('woff2'), 
+    url('../../fonts/woff/PretendardGOV-SemiBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard GOV';
+	font-weight: 500;
+	font-display: swap;
+	src: url('../../fonts/woff2/PretendardGOV-Medium.woff2') format('woff2'), 
+    url('../../fonts/woff/PretendardGOV-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard GOV';
+	font-weight: 400;
+	font-display: swap;
+	src: url('../../fonts/woff2/PretendardGOV-Regular.woff2') format('woff2'), 
+    url('../../fonts/woff/PretendardGOV-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard GOV';
+	font-weight: 300;
+	font-display: swap;
+	src: url('../../fonts/woff2/PretendardGOV-Light.woff2') format('woff2'), 
+    url('../../fonts/woff/PretendardGOV-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard GOV';
+	font-weight: 200;
+	font-display: swap;
+	src: url('../../fonts/woff2/PretendardGOV-ExtraLight.woff2') format('woff2'), 
+    url('../../fonts/woff/PretendardGOV-ExtraLight.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard GOV';
+	font-weight: 100;
+	font-display: swap;
+	src: url('../../fonts/woff2/PretendardGOV-Thin.woff2') format('woff2'), 
+    url('../../fonts/woff/PretendardGOV-Thin.woff') format('woff');
+} */
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  font-display: swap;
+  src: url("../../fonts/woff2/Pretendard-Black.woff2") format("woff2"),
+    url("../../fonts/woff/Pretendard-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-display: swap;
+  src: url("../../fonts/woff2/Pretendard-ExtraBold.woff2") format("woff2"),
+    url("../../fonts/woff/Pretendard-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../fonts/woff2/Pretendard-Bold.woff2") format("woff2"),
+    url("../../fonts/woff/Pretendard-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../../fonts/woff2/Pretendard-SemiBold.woff2") format("woff2"),
+    url("../../fonts/woff/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../../fonts/woff2/Pretendard-Medium.woff2") format("woff2"),
+    url("../../fonts/woff/Pretendard-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/woff2/Pretendard-Regular.woff2") format("woff2"),
+    url("../../fonts/woff/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-display: swap;
+  src: url("../../fonts/woff2/Pretendard-Light.woff2") format("woff2"),
+    url("../../fonts/woff/Pretendard-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-display: swap;
+  src: url("../../fonts/woff2/Pretendard-ExtraLight.woff2") format("woff2"),
+    url("../../fonts/woff/Pretendard-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-display: swap;
+  src: url("../../fonts/woff2/Pretendard-Thin.woff2") format("woff2"),
+    url("../../fonts/woff/Pretendard-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../../fonts/NotoSansKR-Thin.woff2) format("woff2"),
+    url(../../fonts/NotoSansKR-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../../fonts/NotoSansKR-Light.woff2) format("woff2"),
+    url(../../fonts/NotoSansKR-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/NotoSansKR-Regular.woff2) format("woff2"),
+    url(../../fonts/NotoSansKR-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../fonts/NotoSansKR-Medium.woff2) format("woff2"),
+    url(../../fonts/NotoSansKR-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../../fonts/NotoSansKR-Bold.woff2) format("woff2"),
+    url(../../fonts/NotoSansKR-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../../fonts/NotoSansKR-Black.woff2) format("woff2"),
+    url(../../fonts/NotoSansKR-Black.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../../fonts/Poppins-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/Poppins-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../fonts/Poppins-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../../fonts/Poppins-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/Roboto-Regular.woff2) format("woff2"),
+    url(../../fonts/Roboto-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../fonts/Roboto-Medium.woff2) format("woff2"),
+    url(../../fonts/Roboto-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../../fonts/Roboto-Bold.woff2) format("woff2"),
+    url(../../fonts/Roboto-Bold.woff) format("woff");
+}
+
+/* unicode-range: U+0030-0039; 숫자 범위 */
+/* font-display: swap; Gives the font face a very small block period and an infinite swap period. */

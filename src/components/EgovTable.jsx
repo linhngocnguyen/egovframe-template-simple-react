@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect } from "react";
 
 const generateRandomData = (count) => {
   const data = [];
@@ -14,7 +14,9 @@ const generateRandomData = (count) => {
       country: `Country${i}`,
       company: `Company ${i}`,
       jobTitle: `Job Title ${i}`,
-      dateOfBirth: `${Math.floor(Math.random() * 30) + 1970}-${Math.floor(Math.random() * 12) + 1}-${Math.floor(Math.random() * 28) + 1}`,
+      dateOfBirth: `${Math.floor(Math.random() * 30) + 1970}-${
+        Math.floor(Math.random() * 12) + 1
+      }-${Math.floor(Math.random() * 28) + 1}`,
       randomValue1: `Random Value ${Math.floor(Math.random() * 100)}`,
       randomValue2: `Random Value ${Math.floor(Math.random() * 100)}`,
       randomValue3: `Random Value ${Math.floor(Math.random() * 100)}`,
@@ -24,7 +26,7 @@ const generateRandomData = (count) => {
       randomValue7: `Random Value ${Math.floor(Math.random() * 100)}`,
       randomValue8: `Random Value ${Math.floor(Math.random() * 100)}`,
       randomValue9: `Random Value ${Math.floor(Math.random() * 100)}`,
-      randomValue10: `Random Value ${Math.floor(Math.random() * 100)}`
+      randomValue10: `Random Value ${Math.floor(Math.random() * 100)}`,
     };
 
     data.push(rowData);
@@ -36,7 +38,11 @@ const generateRandomData = (count) => {
 const TableRow = React.memo(({ row, onRowClick }) => {
   return (
     <tr className="row" onClick={() => onRowClick(row)}>
-      {Object.values(row).map((value, index) => <td key={index}>{value}</td>)}
+      {Object.values(row).map((value, index) => (
+        <td key={index} class="t-row">
+          {value}
+        </td>
+      ))}
     </tr>
   );
 });
@@ -49,9 +55,9 @@ const EgovTable = () => {
 
   useEffect(() => {
     if (isPopupActive) {
-      document.body.classList.add('popup-active');
+      document.body.classList.add("popup-active");
     } else {
-      document.body.classList.remove('popup-active');
+      document.body.classList.remove("popup-active");
     }
   }, [isPopupActive]);
 
@@ -67,33 +73,33 @@ const EgovTable = () => {
   const handleClose = () => {
     setSelectedRow(null);
     togglePopup();
-  }
-  
+  };
+
   return (
     <div className="table-container">
-      <table>
+      <table id="table-data">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>Country</th>
-            <th>Company</th>
-            <th>Job Title</th>
-            <th>Date of Birth</th>
-            <th>Random Value 1</th>
-            <th>Random Value 2</th>
-            <th>Random Value 3</th>
-            <th>Random Value 4</th>
-            <th>Random Value 5</th>
-            <th>Random Value 6</th>
-            <th>Random Value 7</th>
-            <th>Random Value 8</th>
-            <th>Random Value 9</th>
-            <th>Random Value 10</th>
+            <th className="t-col">ID</th>
+            <th className="t-col">Name</th>
+            <th className="t-col">Email</th>
+            <th className="t-col">Phone</th>
+            <th className="t-col">Address</th>
+            <th className="t-col">City</th>
+            <th className="t-col">Country</th>
+            <th className="t-col">Company</th>
+            <th className="t-col">Job Title</th>
+            <th className="t-col">Date of Birth</th>
+            <th className="t-col">Random Value 1</th>
+            <th className="t-col">Random Value 2</th>
+            <th className="t-col">Random Value 3</th>
+            <th className="t-col">Random Value 4</th>
+            <th className="t-col">Random Value 5</th>
+            <th className="t-col">Random Value 6</th>
+            <th className="t-col">Random Value 7</th>
+            <th className="t-col">Random Value 8</th>
+            <th className="t-col">Random Value 9</th>
+            <th className="t-col">Random Value 10</th>
           </tr>
         </thead>
         <tbody>
@@ -106,13 +112,21 @@ const EgovTable = () => {
       {selectedRow && (
         <>
           <div className="blurred-background" />
-          <div className={`popup ${isPopupActive ? 'active' : ''}`}>
+          <div className={`popup ${isPopupActive ? "active" : ""}`}>
             <div className="popup-content">
               <h2>Details</h2>
               {Object.entries(selectedRow).map(([key, value]) => (
-                <p key={key}>{key}: {value}</p>
+                <p key={key}>
+                  {key}: {value}
+                </p>
               ))}
-              <button onClick={() => {handleClose()}}>Close</button>
+              <button
+                onClick={() => {
+                  handleClose();
+                }}
+              >
+                Close
+              </button>
             </div>
           </div>
         </>
